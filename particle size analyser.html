@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css  ">
+  <script type="text/javascript" src="js.js"></script>
+  <script src="javascrip.js"></script>
+  
+</head>
+
+<body>
+  <div class="navbar">
+
+    <a href="index.html">Home</a>
+
+    <div class="dropdown">
+      <button class="dropbtn">INSTRUMENTS
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <div class="header">
+          <h2>INSTRUMENTS</h2>
+        </div>
+        <div class="row">
+          <div class="column">
+            <a href="analytical balance.html">
+              <h3>Balances</h3>
+            </a>
+            <img src="analytical-balance.jpg" alt="..." class="img">
+          </div>
+          <div class="row">
+            <div class="column">
+              <a href="liquid chromatographer.html">
+                <h3>Liquid Chromatographer</h3>
+              </a>
+              <img src="liquid chroma.jpg" alt="..." class="img">
+            </div>
+          </div>
+          <div class="column">
+            <a href="particle size analyser.html">
+              <h3>Particle size analyser</h3>
+            </a>
+            <img src="particle size analyser.jpg" alt="..." class="img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   <!-- Control buttons -->
+   <div id="myBtnContainer">
+    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+    <button class="btn" onclick="filterSelection('Mettler')"> Mettler</button>
+    <button class="btn" onclick="filterSelection('Schimadzu')"> Schimadzu</button>
+    <button class="btn" onclick="filterSelection('Labman')"> Labman</button>
+    <button class="btn" onclick="filterSelection('Hitachi')"> Hitachi</button>
+  </div>
+   <!-- Control buttons -->
+   <div id="myBtnContainer">
+     PRICE SELECTION
+    <button class="btn" onclick="filterSelection('0-50$')"> 0-50$</button>
+    <button class="btn" onclick="filterSelection('50$-100$')"> 50$-100$</button>
+    <button class="btn" onclick="filterSelection('100$-150$')"> 100$-150$</button>
+    <button class="btn" onclick="filterSelection('150$-200$')"> 150$-200$</button>
+  </div>
+
+  
+  
+ 
+ 
+  
+  <div class="card Hitachi 0-50$">
+    <img src="particle size analyser.jpg" alt="Denim Jeans" style="width:100%">
+    <h1>Particle Size Analyser Hitachi</h1>
+    <p class="price">40$</p>
+    <p>Some text about the jeans..</p>
+    <p><button>Add to Cart</button></p>
+  </div>
+  <div class="card Mettler 50$-100$">
+    <img src="particle size analyser.jpg" alt="Denim Jeans" style="width:100%">
+    <h1>Particle Size Analyser Mettler</h1>
+    <p class="price">$70$</p>
+    <p>Some text about the jeans..</p>
+    <p><button>Add to Cart</button></p>
+  </div>
+  <div class="card Labman 150$-200$" >
+    <img src="particle size analyser.jpg" alt="Denim Jeans" style="width:100%">
+    <h1>Particle Size Analyser Labman</h1>
+    <p class="price">$170</p>
+    <p>Some text about the jeans..</p>
+    <p><button>Add to Cart</button></p>
+  </div>
+
+
+  <!-- Control buttons
+  <div id="myBtnContainer">
+    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+    <button class="btn" onclick="filterSelection('Mettler')"> Mettler</button>
+    <button class="btn" onclick="filterSelection('Schimadzu')"> Schimadzu</button>
+    <button class="btn" onclick="filterSelection('Labman')"> Labman</button>
+    <button class="btn" onclick="filterSelection('Hitachi')"> Hitachi</button>
+  </div> -->
+
+  
+
+
+</body>
+
+</html>
